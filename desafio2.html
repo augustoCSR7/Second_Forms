@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+        <title>Ficha do pedido</title>
+    </head>
+    <body>
+        <form>
+            <div style="text-align:left">
+                <fieldset>
+                    <h1>Ficha de Encomenda de Pizzas</h1>
+                    <label for="pizza">Qual a pizza a encomendar?</label>
+                        <select id="pizza">
+                            <option value=""></option>
+                            <option value="calabresa">Calabresa</option>
+                            <option value="mussarela">Mussarela</option>
+                            <option value="portuguesa">Portuguesa</option>
+                            <option value="margerita">Margerita</option>
+                            <option value="quatroQuei">4 queijos</option>
+                            <option value="frangoCap">Frango com catupiry</option>
+                        </select>
+                    <label for="quant">Quantidade:</label>
+                        <select id="quant">
+                            <option value=""></option>
+                            <option value="um">1</option>
+                            <option value="dois">2</option>
+                            <option value="tres">3</option>
+                            <option value="quatro">4</option>
+                            <option value="cinco">5</option>
+                            <option value="seis">6</option>
+                            <option value="sete">7</option>
+                            <option value="oito">8</option>
+                            <option value="nove">9</option>
+                            <option value="dez">10</option>
+                        </select>
+                    <br>
+                    <br>
+                    <label for="bebida">Qual a bebida?</label>
+                        <select id="bebida">
+                            <option value=""></option>
+                            <option value="cocaCola">Coca-Cola</option>
+                            <option value="fantaUva">Fanta Uva</option>
+                            <option value="fantaLar">Fante Laranja</option>
+                            <option value="guaranaJesus">Guaraná Jesus</option>
+                            <option value="sucoGoiaba">Suco de goiaba</option>
+                            <option value="sucoMaracuja">Suca de maracujá</option>
+                            <option value="agua">Água</option>
+                        </select>
+                    <label for="quantidade">Quantidade:</label>
+                        <select id="quantidade">
+                            <option value=""></option>
+                            <option value="umBeb">1</option>
+                            <option value="doisBeb">2</option>
+                            <option value="tresBeb">3</option>
+                            <option value="quatroBeb">4</option>
+                            <option value="cincoBeb">5</option>
+                        </select>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="extraQueijo" name="extraQueijo">
+                    <label for="extraQueijo">Extra Queijo </label>
+                    
+                    <input type="checkbox" id="massaGrossa" name="massaGrossa">
+                    <label for="massaGrossa">Massa Grossa </label>
+                    
+                    <input type="checkbox" id="pimentos" name="pimentos">
+                    <label for="pimentos">Pimentos</label>
+                    
+                    <input type="checkbox" id="cogumelos" name="cogumelos">
+                    <label for="cogumelos">Cogumelos</label>
+                    <hr>
+
+                    <h2>Dados para entrega:</h2>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="morada">Morada: </label> 
+                    <input type="text" id="morada" name="morada">
+                    <br>
+                    <br>
+                    <label for="telefone">Telefone: </label>
+                    <input type="number" id="telefone" name="telefone">
+                    <hr>
+                    <h2>Forma de pagamento: </h2>
+                    <input type="radio" id="visa" name="pagamento">
+                    <label for="visa">VISA</label>
+                    <input type="radio" id="cEntrega" name="pagamento">
+                    <label for="cEntrega">Contra entrega</label>
+                    <input type="radio" id="factura" name="pagamento">
+                    <label for="factura">Factura(30dias + 15%)</label>
+                    <br>
+                    <br>
+                    <label for="numCartao">Número do cartão VISA</label>
+                    <input type="number" id="numCartao" name="numCartao">
+                    <hr>
+                    <input type="button" value="ENVIAR" onclick="enviarPed(this.form)">
+                    <input type="reset" value="LIMPAR">
+                </fieldset>
+            </div>
+        </form>
+        <script scr="funções2.js"></script>
+    </body>
+</html>
